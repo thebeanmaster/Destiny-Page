@@ -1,0 +1,318 @@
+<html>
+<head>
+<title>
+DPS Calculator For Destiny
+</title>
+<style>
+	body {
+		background-color : #12171C;
+		color : #CEAE33;
+	}
+	
+	input { 
+		background-color : #12171C;
+		color : #CEAE33;
+	}
+	
+	button {
+		background-color : #12171C;
+		color : #CEAE33;
+		border-radius: 12px;
+	}
+	
+	span {
+		color : white;
+	}
+	
+	
+	
+</style>
+</head>
+<body>
+Enter Weapon Name:<input type="text" id="weapon">
+<button id="calculate">Calculate</button>
+<br>
+<br>
+Damage Per Shot: <span id="shot"></span>
+<br>
+Time To Fire All Shots: <span id="time"></span>
+<br>
+Damage Per Second: <span id="dps"></span>
+<br>
+Damage With Weapons of Light: <span id="wol"></span>
+<br>
+Damage With Shadowshot Applied: <span id="tether"></span>
+<br>
+Max Damage Per Shot: <span id="max"></span>
+<br>
+Max Damage Per Second: <span id="maxdps"></span>
+<br>
+<br>
+Shots Needed to Kill:
+<br>
+The Templar: <span id="templar"></span>
+<br>
+Atheon: <span id="atheon"></span>
+<br>
+Ir Yut, Deathsinger: <span id="iryut"></span>
+<br>
+Crota (Shield): <span id="crota"></span>
+<br>
+The Warpreiest: <span id="war"></span>
+<br>
+Golgoroth: <span id="golg"></span>
+<br>
+Oryx (Stagger): <span id="oryx"></span>
+<br>
+Vosik: <span id="vosik"></span>
+<br>
+Aksis: <span id="aksis"></span>
+<br>
+
+
+
+
+
+
+
+
+
+</body>
+<script>
+
+
+
+function doCalculate(){
+var wepName = document.getElementById("weapon").value;
+
+	if (wepName == "Black Spindle") {
+	var mag = 3;
+	var sps = 1.2605042017;
+	var damage = 8510;
+	var dps = damage * sps;
+	var maxdps = damage * sps * 1.6;
+	document.getElementById("shot").innerHTML = damage;
+	document.getElementById("time").innerHTML = (mag / sps).toFixed(2) + " seconds";
+	document.getElementById("dps").innerHTML = dps.toFixed(2);
+	document.getElementById("wol").innerHTML =  (damage * 1.25).toFixed(2);
+	document.getElementById("tether").innerHTML = (damage * 1.35).toFixed(2);
+	document.getElementById("max").innerHTML = (damage * 1.6).toFixed(2);
+	document.getElementById("maxdps").innerHTML = maxdps.toFixed(2);
+	
+	document.getElementById("templar").innerHTML = (415000 / damage).toFixed(0);
+	document.getElementById("atheon").innerHTML = (2000000 / damage).toFixed(0);
+	document.getElementById("iryut").innerHTML = (150000 / damage).toFixed(0);
+	document.getElementById("crota").innerHTML = (30000 / damage).toFixed(0);
+	document.getElementById("war").innerHTML = (4000000 / damage).toFixed(0);
+	document.getElementById("golg").innerHTML = (12000000 / damage).toFixed(0);
+	document.getElementById("oryx").innerHTML = (30000 / damage).toFixed(0);
+	document.getElementById("vosik").innerHTML = (9000000 / damage).toFixed(0);
+	document.getElementById("aksis").innerHTML = (13000000 / damage).toFixed(0);
+	}
+	else if (wepName == "Sleeper Simulant"){
+	var mag = 3;
+	var sps = 0.5964214712;
+	var damage = 15317;
+	var dps = damage * sps;
+	var maxdps = damage * sps * 1.6;
+	document.getElementById("shot").innerHTML = damage;
+	document.getElementById("time").innerHTML = (mag / sps).toFixed(2) + " seconds";
+	document.getElementById("dps").innerHTML = dps.toFixed(2);
+	document.getElementById("wol").innerHTML = (damage * 1.25).toFixed(2);
+	document.getElementById("tether").innerHTML = (damage * 1.35).toFixed(2);
+	document.getElementById("max").innerHTML = (damage * 1.6).toFixed(2);
+	document.getElementById("maxdps").innerHTML = maxdps.toFixed(2);
+	
+	document.getElementById("templar").innerHTML = (415000 / damage).toFixed(0);
+	document.getElementById("atheon").innerHTML = (2000000 / damage).toFixed(0);
+	document.getElementById("iryut").innerHTML = (150000 / damage).toFixed(0);
+	document.getElementById("crota").innerHTML = (30000 / damage).toFixed(0);
+	document.getElementById("war").innerHTML = (4000000 / damage).toFixed(0);
+	document.getElementById("golg").innerHTML = (12000000 / damage).toFixed(0);
+	document.getElementById("oryx").innerHTML = (30000 / damage).toFixed(0);
+	document.getElementById("vosik").innerHTML = (9000000 / damage).toFixed(0);
+	document.getElementById("aksis").innerHTML = (13000000 / damage).toFixed(0);
+	}
+
+	else if (wepName == "Touch of Malice"){
+	var mag = 11;
+	var sps = 4.5454545455;
+	var damage = 1952;
+	var dps = damage * sps;
+	var maxdps = damage * sps * 1.6;
+	document.getElementById("shot").innerHTML = damage;
+	document.getElementById("time").innerHTML = (mag / sps).toFixed(2) + " seconds";
+	document.getElementById("dps").innerHTML = dps.toFixed(2);
+	document.getElementById("wol").innerHTML = (damage * 1.25).toFixed(2);
+	document.getElementById("tether").innerHTML = (damage * 1.35).toFixed(2);
+	document.getElementById("max").innerHTML = (damage * 1.6).toFixed(2);
+	document.getElementById("maxdps").innerHTML = maxdps.toFixed(2);
+	
+	document.getElementById("templar").innerHTML = (415000 / damage).toFixed(0);
+	document.getElementById("atheon").innerHTML = (2000000 / damage).toFixed(0);
+	document.getElementById("iryut").innerHTML = (150000 / damage).toFixed(0);
+	document.getElementById("crota").innerHTML = (30000 / damage).toFixed(0);
+	document.getElementById("war").innerHTML = (4000000 / damage).toFixed(0);
+	document.getElementById("golg").innerHTML = (12000000 / damage).toFixed(0);
+	document.getElementById("oryx").innerHTML = (30000 / damage).toFixed(0);
+	document.getElementById("vosik").innerHTML = (9000000 / damage).toFixed(0);
+	document.getElementById("aksis").innerHTML = (13000000 / damage).toFixed(0);
+	}
+	
+	else if (wepName == "Outbreak Prime"){
+	var mag = 36;
+	var sps = 7.8602620087;
+	var damage = 1884;
+	var dps = damage * sps;
+	var maxdps = damage * sps * 1.6;
+	document.getElementById("shot").innerHTML = damage;
+	document.getElementById("time").innerHTML = (mag / sps).toFixed(2) + " seconds";
+	document.getElementById("dps").innerHTML = dps.toFixed(2);
+	document.getElementById("wol").innerHTML = (damage * 1.25).toFixed(2);
+	document.getElementById("tether").innerHTML = (damage * 1.35).toFixed(2);
+	document.getElementById("max").innerHTML = (damage * 1.6).toFixed(2);
+	document.getElementById("maxdps").innerHTML = maxdps.toFixed(2);
+	
+	document.getElementById("templar").innerHTML = (415000 / damage).toFixed(0);
+	document.getElementById("atheon").innerHTML = (2000000 / damage).toFixed(0);
+	document.getElementById("iryut").innerHTML = (150000 / damage).toFixed(0);
+	document.getElementById("crota").innerHTML = (30000 / damage).toFixed(0);
+	document.getElementById("war").innerHTML = (4000000 / damage).toFixed(0);
+	document.getElementById("golg").innerHTML = (12000000 / damage).toFixed(0);
+	document.getElementById("oryx").innerHTML = (30000 / damage).toFixed(0);
+	document.getElementById("vosik").innerHTML = (9000000 / damage).toFixed(0);
+	document.getElementById("aksis").innerHTML = (13000000 / damage).toFixed(0);
+	}
+	
+	else if (wepName == "Found Verdict"){
+	var mag = 6;
+	var sps = 1.9480519481;
+	var damage = 7497;
+	var dps = damage * sps;
+	var maxdps = damage * sps * 1.6;
+	document.getElementById("shot").innerHTML = damage;
+	document.getElementById("time").innerHTML = (mag / sps).toFixed(2) + " seconds";
+	document.getElementById("dps").innerHTML = dps.toFixed(2);
+	document.getElementById("wol").innerHTML = (damage * 1.25).toFixed(2);
+	document.getElementById("tether").innerHTML = (damage * 1.35).toFixed(2);
+	document.getElementById("max").innerHTML = (damage * 1.6).toFixed(2);
+	document.getElementById("maxdps").innerHTML = maxdps.toFixed(2);
+	
+	document.getElementById("templar").innerHTML = (415000 / damage).toFixed(0);
+	document.getElementById("atheon").innerHTML = (2000000 / damage).toFixed(0);
+	document.getElementById("iryut").innerHTML = (150000 / damage).toFixed(0);
+	document.getElementById("crota").innerHTML = (30000 / damage).toFixed(0);
+	document.getElementById("war").innerHTML = (4000000 / damage).toFixed(0);
+	document.getElementById("golg").innerHTML = (12000000 / damage).toFixed(0);
+	document.getElementById("oryx").innerHTML = (30000 / damage).toFixed(0);
+	document.getElementById("vosik").innerHTML = (9000000 / damage).toFixed(0);
+	document.getElementById("aksis").innerHTML = (13000000 / damage).toFixed(0);
+	}
+	
+	else if (wepName == "Icebreaker"){
+	var mag = 6;
+	var sps = 1.3729977117;
+	var damage = 7493;
+	var dps = damage * sps;
+	var maxdps = damage * sps * 1.6;
+	document.getElementById("shot").innerHTML = damage;
+	document.getElementById("time").innerHTML = (mag / sps).toFixed(2) + " seconds";
+	document.getElementById("dps").innerHTML = dps.toFixed(2);
+	document.getElementById("wol").innerHTML = (damage * 1.25).toFixed(2);
+	document.getElementById("tether").innerHTML = (damage * 1.35).toFixed(2);
+	document.getElementById("max").innerHTML = (damage * 1.6).toFixed(2);
+	document.getElementById("maxdps").innerHTML = maxdps.toFixed(2);
+	
+	document.getElementById("templar").innerHTML = (415000 / damage).toFixed(0);
+	document.getElementById("atheon").innerHTML = (2000000 / damage).toFixed(0);
+	document.getElementById("iryut").innerHTML = (150000 / damage).toFixed(0);
+	document.getElementById("crota").innerHTML = (30000 / damage).toFixed(0);
+	document.getElementById("war").innerHTML = (4000000 / damage).toFixed(0);
+	document.getElementById("golg").innerHTML = (12000000 / damage).toFixed(0);
+	document.getElementById("oryx").innerHTML = (30000 / damage).toFixed(0);
+	document.getElementById("vosik").innerHTML = (9000000 / damage).toFixed(0);
+	document.getElementById("aksis").innerHTML = (13000000 / damage).toFixed(0);
+	}
+	
+	else if (wepName == "Ex Machina"){
+	var mag = 3;
+	var sps = 1.351353514;
+	var damage = 9595;
+	var dps = damage * sps;
+	var maxdps = damage * sps * 1.6;
+	document.getElementById("shot").innerHTML = damage;
+	document.getElementById("time").innerHTML = (mag / sps).toFixed(2) + " seconds";
+	document.getElementById("dps").innerHTML = dps.toFixed(2);
+	document.getElementById("wol").innerHTML = (damage * 1.25).toFixed(2);
+	document.getElementById("tether").innerHTML = (damage * 1.35).toFixed(2);
+	document.getElementById("max").innerHTML = (damage * 1.6).toFixed(2);
+	document.getElementById("maxdps").innerHTML = maxdps.toFixed(2);
+	
+	document.getElementById("templar").innerHTML = (415000 / damage).toFixed(0);
+	document.getElementById("atheon").innerHTML = (2000000 / damage).toFixed(0);
+	document.getElementById("iryut").innerHTML = (150000 / damage).toFixed(0);
+	document.getElementById("crota").innerHTML = (30000 / damage).toFixed(0);
+	document.getElementById("war").innerHTML = (4000000 / damage).toFixed(0);
+	document.getElementById("golg").innerHTML = (12000000 / damage).toFixed(0);
+	document.getElementById("oryx").innerHTML = (30000 / damage).toFixed(0);
+	document.getElementById("vosik").innerHTML = (9000000 / damage).toFixed(0);
+	document.getElementById("aksis").innerHTML = (13000000 / damage).toFixed(0);
+	}
+
+	else if (wepName == "Qullims Terminus"){
+	var mag = 42;
+	var sps = 6.0258249641;
+	var damage = 930;
+	var dps = damage * sps;
+	var maxdps = damage * sps * 1.6;
+	document.getElementById("shot").innerHTML = damage;
+	document.getElementById("time").innerHTML = (mag / sps).toFixed(2) + " seconds";
+	document.getElementById("dps").innerHTML = dps.toFixed(2);
+	document.getElementById("wol").innerHTML = (damage * 1.25).toFixed(2);
+	document.getElementById("tether").innerHTML = (damage * 1.35).toFixed(2);
+	document.getElementById("max").innerHTML = (damage * 1.6).toFixed(2);
+	document.getElementById("maxdps").innerHTML = maxdps.toFixed(2);
+	
+	document.getElementById("templar").innerHTML = (415000 / damage).toFixed(0);
+	document.getElementById("atheon").innerHTML = (2000000 / damage).toFixed(0);
+	document.getElementById("iryut").innerHTML = (150000 / damage).toFixed(0);
+	document.getElementById("crota").innerHTML = (30000 / damage).toFixed(0);
+	document.getElementById("war").innerHTML = (4000000 / damage).toFixed(0);
+	document.getElementById("golg").innerHTML = (12000000 / damage).toFixed(0);
+	document.getElementById("oryx").innerHTML = (30000 / damage).toFixed(0);
+	document.getElementById("vosik").innerHTML = (9000000 / damage).toFixed(0);
+	document.getElementById("aksis").innerHTML = (13000000 / damage).toFixed(0);
+	}
+	
+	else if (wepName == "Gjallahorn"){
+	var mag = 2;
+	var sps = 1.1764705882;
+	var damage = 13851;
+	var dps = damage * sps;
+	var maxdps = damage * sps * 1.6;
+	document.getElementById("shot").innerHTML = damage;
+	document.getElementById("time").innerHTML = (mag / sps).toFixed(2) + " seconds";
+	document.getElementById("dps").innerHTML = dps.toFixed(2);
+	document.getElementById("wol").innerHTML = (damage * 1.25).toFixed(2);
+	document.getElementById("tether").innerHTML = (damage * 1.35).toFixed(2);
+	document.getElementById("max").innerHTML = (damage * 1.6).toFixed(2);
+	document.getElementById("maxdps").innerHTML = maxdps.toFixed(2);
+	
+	document.getElementById("templar").innerHTML = (415000 / damage).toFixed(0);
+	document.getElementById("atheon").innerHTML = (2000000 / damage).toFixed(0);
+	document.getElementById("iryut").innerHTML = (150000 / damage).toFixed(0);
+	document.getElementById("crota").innerHTML = (30000 / damage).toFixed(0);
+	document.getElementById("war").innerHTML = (4000000 / damage).toFixed(0);
+	document.getElementById("golg").innerHTML = (12000000 / damage).toFixed(0);
+	document.getElementById("oryx").innerHTML = (30000 / damage).toFixed(0);
+	document.getElementById("vosik").innerHTML = (9000000 / damage).toFixed(0);
+	document.getElementById("aksis").innerHTML = (13000000 / damage).toFixed(0);
+	}
+}
+
+
+
+
+
+document.getElementById("calculate").addEventListener("click",doCalculate);
+</script>

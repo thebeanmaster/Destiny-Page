@@ -1,0 +1,668 @@
+<head>
+<title>
+Destiny 2 Exotic Weapons
+</title>
+<style>
+	#content {
+		border:1px solid black;
+		background-color : #aaa;
+		}
+	
+	div.title {
+		text-align:center;
+		font-size: 1.5em;
+		text-decoration: underline
+		}
+		
+	div.data {
+		display: inline-block;
+		}
+	
+	button {
+		width : 200px;
+		}
+	
+	button.arc {
+		background-color: #78c0ed;
+		}
+	
+	button.sol {
+		background-color: #e28a31;
+		}
+	
+	button.void {
+		background-color: #9a57f2;
+		}
+		
+	button.kin {
+		background-color: #ccc9c9;
+		}	
+		
+	body {
+		background-color : #12171C;
+		color : #CFAE33;
+	}
+	
+	
+		
+</style>
+</head>
+<body>
+	<div class="title">Exotics</div>
+	<div>
+	<center>
+		<img src="https://d2.destinygamewiki.com/mediawiki/images/4/4e/Crimson_icon1.jpg" id="mypic">
+		<br>
+		Name: <div id="name" class="data">Crimson</div><br>
+		Impact: <div id="impact" class="data">92</div><br>
+		Range: <div id="range" class="data">60</div><br>
+		Magazine: <div id="mag" class="data">30</div><br>
+		RPM: <div id="rof" class="data">386</div><br>
+		Reload: <div id="reload" class="data">64</div><br>
+	</center>
+	</div>
+	<button id="AOS2" class="kin">Ace of Spades</button>
+	<button id="CRSM" class="kin">Crimson</button>
+	<button id="MLFS" class="kin">Malfeasance</button>
+	<button id="STRM" class="kin">Sturm</button>
+	<button id="SSHT" class="sol">Sunshot</button>
+	<button id="CRBS" class="kin">Cerberus +1</button>
+	<button id="SR2" class="kin">Suros Regime</button>
+	<button id="SWB" class="kin">Sweet Business</button>
+	<button id="HL2" class="void">Hard Light</button>
+	<button id="MM2" class="kin">MIDA Multi-Tool</button>
+	<button id="JR2" class="kin">The Jade Rabbit</button>
+	<button id="PL" class="sol">Polaris Lance</button>
+	<button id="SKY" class="sol">Skyburner's Oath</button>
+	<button id="RTK" class="kin">Rat King</button>
+	<button id="VW" class="kin">Vigilance Wing</button>
+	<button id="GLA" class="void">Graviton Lance</button>
+	<button id="HCKL" class="kin">Huckleberry</button>
+	<button id="RISK" class="arc">Riskrunner</button>
+	<button id="WISH" class="kin">Wish-Ender</button>
+	<button id="TRI" class="arc">Trinity Ghoul</button>
+	<button id="LEM" class="void">Le Monarque</button>
+	<button id="CLD" class="arc">Coldheart</button>
+	<button id="PLEN" class="sol">Prometheus Lens</button>
+	<button id="WAVE" class="void">Wavesplitter</button>
+	<button id="LION" class="void">Fighting Lion</button>
+	<button id="IZA" class="kin">Izanagi's Burden</button>
+	<button id="BOR" class="sol">Borealis</button>
+	<button id="CHAP2" class="kin">Chaperone</button>
+	<button id="LOW2" class="sol">Lord of Wolves</button>
+	<button id="JOT" class="sol">Jötunn</button>
+	<button id="WLZ" class="arc">Worldline Zero</button>
+	<button id="BT" class="void">Black Talon</button>
+	<button id="ANA" class="arc">Anarchy</button>
+	<button id="PROS" class="arc">Prospector</button>
+	<button id="COL" class="void">Colony</button>
+	<button id="DRC" class="arc">D.A.R.C.I.</button>
+	<button id="WOTW" class="sol">Whisper of the Worm</button>
+	<button id="ACR" class="arc">Legend of Acrius</button>
+	<button id="TC" class="void">Tractor Cannon</button>
+	<button id="DV" class="arc">The Wardcliff Coil</button>
+	<button id="TTF" class="void">Two-Tailed Fox</button>
+	<button id="SS2" class="sol">Sleeper Simulant</button>
+	<button id="TEL2" class="void">Telesto</button>
+	<button id="MRCI" class="sol">Merciless</button>
+	<button id="THL2" class="arc">Thunderlord</button>
+	
+</body>
+<script>
+	var name;
+	var impact;
+	var range;
+	var mag;
+	var rof;
+	var reload;
+	
+	function chooseAOS2() {
+	document.getElementById("mypic").src = "https://d2.destinygamewiki.com/mediawiki/images/5/5f/IMG_8812.JPG"
+	name = "Ace of Spades";
+	impact = "84";
+	range = "78";
+	mag = 13;
+	rof = 140;
+	reload = 48;
+	update();
+	}
+	
+	function chooseCRSM() {
+	document.getElementById("mypic").src = "https://d2.destinygamewiki.com/mediawiki/images/4/4e/Crimson_icon1.jpg"
+	name = "Crimson";
+	impact = "92";
+	range = "60";
+	mag = 30;
+	rof = 386;
+	reload = 64;
+	update();
+	}
+	
+	function chooseMLFS() {
+	document.getElementById("mypic").src = "https://d2.destinygamewiki.com/mediawiki/images/2/27/IMG_8810.JPG"
+	name = "Malfeasance";
+	impact = "78";
+	range = "46";
+	mag = 14;
+	rof = 180;
+	reload = 82;
+	update();
+	}
+	
+	function chooseSTRM() {
+	document.getElementById("mypic").src = "https://d2.destinygamewiki.com/mediawiki/images/3/3c/Sturm_icon1.png"
+	name = "Sturm";
+	impact = "92";
+	range = "73";
+	mag = 12;
+	rof = 110;
+	reload = 37;
+	update();
+	}	
+	
+	function chooseSSHT() {
+	document.getElementById("mypic").src = "https://d2.destinygamewiki.com/mediawiki/images/9/9c/Sunshot_icon2.png"
+	name = "Sunshot";
+	impact = "33";
+	range = "10";
+	mag = 31;
+	rof = 360;
+	reload = 42;
+	update();
+	}	
+	
+	function chooseCRBS() {
+	document.getElementById("mypic").src = "https://d2.destinygamewiki.com/mediawiki/images/d/de/Cerberus1_icon1.jpg"
+	name = "Cerberus +1";
+	impact = "78";
+	range = "47";
+	mag = 8;
+	rof = 150;
+	reload = 75;
+	update();
+	}	
+	
+	function chooseSR2() {
+	document.getElementById("mypic").src = "https://d2.destinygamewiki.com/mediawiki/images/6/6a/SUROS_Regime.jpg"
+	name = "Suros Regime";
+	impact = "21";
+	range = "60";
+	mag = 36;
+	rof = 600;
+	reload = 76;
+	update();
+	}	
+	
+	function chooseSWB() {
+	document.getElementById("mypic").src = "https://d2.destinygamewiki.com/mediawiki/images/2/22/Sweet_business_icon2.png"
+	name = "Sweet Business";
+	impact = "18";
+	range = "37";
+	mag = 99;
+	rof = 360;
+	reload = 10;
+	update();
+	}	
+	
+	function chooseHL2() {
+	document.getElementById("mypic").src = "https://d2.destinygamewiki.com/mediawiki/images/e/e1/Hard_light_icon1.png"
+	name = "Hard Light";
+	impact = "21";
+	range = "46";
+	mag = 49;
+	rof = 600;
+	reload = 68;
+	update();
+	}
+	
+	function chooseMM2() {
+	document.getElementById("mypic").src = "https://d2.destinygamewiki.com/mediawiki/images/1/10/MIDA_multi-tool_icon1.png"
+	name = "MIDA Multi-Tool";
+	impact = "60";
+	range = "50";
+	mag = 16;
+	rof = 200;
+	reload = 82;
+	update();
+	}
+	
+	function chooseJR2() {
+	document.getElementById("mypic").src = "https://d2.destinygamewiki.com/mediawiki/images/4/42/Jade_rabbit_osiris_icon1.png"
+	name = "Jade Rabbit";
+	impact = "67";
+	range = "82";
+	mag = 10;
+	rof = 150;
+	reload = 59;
+	update();
+	}
+	
+	function choosePL() {
+	document.getElementById("mypic").src = "https://d2.destinygamewiki.com/mediawiki/images/f/f4/Polaris_lance_icon1.jpg"
+	name = "Polaris Lance";
+	impact = "67";
+	range = "73";
+	mag = 14;
+	rof = 150;
+	reload = 40;
+	update();
+	}
+	
+	function chooseSKY() {
+	document.getElementById("mypic").src = "https://d2.destinygamewiki.com/mediawiki/images/1/1d/Skyburners_oath_icon1.png"
+	name = "Skyburner's Oath";
+	impact = "60";
+	range = "46";
+	mag = 18;
+	rof = 200;
+	reload = 55;
+	update();
+	}
+	
+	function chooseRTK() {
+	document.getElementById("mypic").src = "https://d2.destinygamewiki.com/mediawiki/images/9/91/Rat_king_icon1.png"
+	name = "Rat King";
+	impact = "49";
+	range = "43";
+	mag = 15;
+	rof = 300;
+	reload = 55;
+	update();
+	}
+	
+	function chooseVW() {
+	document.getElementById("mypic").src = "https://d2.destinygamewiki.com/mediawiki/images/9/9c/Vigilance_wing_icon1.png"
+	name = "Vigilance Wing";
+	impact = "33";
+	range = "64";
+	mag = 50;
+	rof = 530;
+	reload = 46;
+	update();
+	}
+	
+	function chooseGLA() {
+	document.getElementById("mypic").src = "https://d2.destinygamewiki.com/mediawiki/images/d/da/Graviton_lance_icon1.png"
+	name = "Graviton Lance";
+	impact = "29";
+	range = "55";
+	mag = 39;
+	rof = 257;
+	reload = 61;
+	update();
+	}
+	
+	function chooseHCKL() {
+	document.getElementById("mypic").src = "https://d2.destinygamewiki.com/mediawiki/images/9/92/The_huckleberry_icon1.jpg"
+	name = "Huckleberry";
+	impact = "22";
+	range = "53";
+	mag = 30;
+	rof = 750;
+	reload = 10;
+	update();
+	}
+	
+	function chooseRISK() {
+	document.getElementById("mypic").src = "https://d2.destinygamewiki.com/mediawiki/images/5/57/Riskrunner_icon1.png"
+	name = "Riskrunner";
+	impact = "20";
+	range = "55";
+	mag = 40;
+	rof = 900;
+	reload = 42;
+	update();
+	}
+	
+	function chooseWISH() {
+	document.getElementById("mypic").src = "https://d2.destinygamewiki.com/mediawiki/images/4/45/Wish-ender_icon1.jpg"
+	name = "Wish-Ender";
+	impact = "92";
+	range = "0";
+	mag = 60;
+	rof = 0;
+	reload = 37;
+	update();
+	}
+	
+	function chooseTRI() {
+	document.getElementById("mypic").src = "https://d2.destinygamewiki.com/mediawiki/images/7/7f/Trinity_ghoul_icon1.jpg"
+	name = "Trinity Ghoul";
+	impact = "80";
+	range = "0";
+	mag = 60;
+	rof = 0;
+	reload = 55;
+	update();
+	}
+	
+	function chooseLEM() {
+	document.getElementById("mypic").src = "https://d2.destinygamewiki.com/mediawiki/images/d/d9/Le_monarque_icon1.jpg"
+	name = "Le Monarque";
+	impact = "76";
+	range = "0";
+	mag = 61;
+	rof = 0;
+	reload = 46;
+	update();
+	}
+	
+	function chooseCLD() {
+	document.getElementById("mypic").src = "https://d2.destinygamewiki.com/mediawiki/images/2/25/Coldheart_icon1.png"
+	name = "Coldheart";
+	impact = "6";
+	range = "64";
+	mag = 101;
+	rof = 1000;
+	reload = 37;
+	update();
+	}
+	
+	function choosePLEN() {
+	document.getElementById("mypic").src = "https://d2.destinygamewiki.com/mediawiki/images/c/c4/Prometheus_lens_icon1.png"
+	name = "Prometheus Lens";
+	impact = "6";
+	range = "64";
+	mag = 77;
+	rof = 1000;
+	reload = 46;
+	update();
+	}
+	
+	function chooseWAVE() {
+	document.getElementById("mypic").src = "https://d2.destinygamewiki.com/mediawiki/images/b/bf/IMG_8808.JPG"
+	name = "Wavesplitter";
+	impact = "6";
+	range = "70";
+	mag = 94;
+	rof = 1000;
+	reload = 50;
+	update();
+	}
+	
+	function chooseLION() {
+	document.getElementById("mypic").src = "https://d2.destinygamewiki.com/mediawiki/images/3/3e/Fighting_lion_icon1.png"
+	name = "Fighting Lion";
+	impact = "0";
+	range = "0";
+	mag = 1;
+	rof = 72;
+	reload = 55;
+	update();
+	}
+	
+	function chooseIZA() {
+	document.getElementById("mypic").src = "https://www.bungie.net/common/destiny2_content/icons/e799303d622fd31d2a553c1346d593cd.jpg"
+	name = "Izanagi's Burden";
+	impact = "70";
+	range = "53";
+	mag = 4;
+	rof = 90;
+	reload = 46;
+	update();
+	}
+	
+	function chooseBOR() {
+	document.getElementById("mypic").src = "https://d2.destinygamewiki.com/mediawiki/images/c/c8/Borealis_icon1.png"
+	name = "Borealis";
+	impact = "90";
+	range = "54";
+	mag = 5;
+	rof = 72;
+	reload = 68;
+	update();
+	}
+	
+	function chooseCHAP2() {
+	document.getElementById("mypic").src = "https://d2.destinygamewiki.com/mediawiki/images/c/c7/The_chaperone_icon1.jpg"
+	name = "Chaperone";
+	impact = "75";
+	range = "100";
+	mag = 6;
+	rof = 60;
+	reload = 37;
+	update();
+	}
+	
+	function chooseLOW2() {
+	document.getElementById("mypic").src = "https://d2.destinygamewiki.com/mediawiki/images/7/73/Lord_of_wolves_icon1.jpg"
+	name = "Lord of Wolves";
+	impact = "68";
+	range = "28";
+	mag = 30;
+	rof = 45;
+	reload = 82;
+	update();
+	}
+	
+	function chooseJOT() {
+	document.getElementById("mypic").src = "https://d2.destinygamewiki.com/mediawiki/images/d/d1/J%C3%B6tunn_icon1.jpg"
+	name = "Jötunn";
+	impact = "95";
+	range = "52";
+	mag = 5;
+	rof = 0;
+	reload = 31;
+	update();
+	}
+	
+	function chooseWLZ() {
+	document.getElementById("mypic").src = "https://d2.destinygamewiki.com/mediawiki/images/0/09/Worldline_zero_icon1.jpg"
+	name = "Worldline Zero";
+	impact = "62";
+	range = "46";
+	mag = 25;
+	rof = 0;
+	reload = 0;
+	update();
+	}
+	
+	function chooseBT() {
+	document.getElementById("mypic").src = "https://d2.destinygamewiki.com/mediawiki/images/c/c4/Black_talon_icon1.jpg"
+	name = "Black Talon";
+	impact = "62";
+	range = "46";
+	mag = 40;
+	rof = 0;
+	reload = 0;
+	update();
+	}
+	
+	function chooseANA() {
+	document.getElementById("mypic").src = "https://d2.destinygamewiki.com/mediawiki/images/d/d1/Anarchy_icon1.jpg"
+	name = "Anarchy";
+	impact = "0";
+	range = "0";
+	mag = 6;
+	rof = 150;
+	reload = 66;
+	update();
+	}
+	
+	function choosePROS() {
+	document.getElementById("mypic").src = "https://d2.destinygamewiki.com/mediawiki/images/8/85/The_prospector_icon1.png"
+	name = "Prospector";
+	impact = "0";
+	range = "0";
+	mag = 8;
+	rof = 165;
+	reload = 32;
+	update();
+	}
+	
+	function chooseCOL() {
+	document.getElementById("mypic").src = "https://d2.destinygamewiki.com/mediawiki/images/e/e5/The_colony_icon1.jpg"
+	name = "Colony";
+	impact = "0";
+	range = "0";
+	mag = 7;
+	rof = 140;
+	reload = 64;
+	update();
+	}
+	
+	function chooseDRC() {
+	document.getElementById("mypic").src = "https://d2.destinygamewiki.com/mediawiki/images/a/aa/Darci_icon1.png"
+	name = "D.A.R.C.I.";
+	impact = "55";
+	range = "37";
+	mag = 7;
+	rof = 140;
+	reload = 64;
+	update();
+	}
+	
+	function chooseWOTW() {
+	document.getElementById("mypic").src = "https://d2.destinygamewiki.com/mediawiki/images/7/7f/Whisper_of_the_worm_icon1.jpg"
+	name = "Whisper of the Worm";
+	impact = "100";
+	range = "78";
+	mag = 3;
+	rof = 72;
+	reload = 42;
+	update();
+	}
+	
+	function chooseACR() {
+	document.getElementById("mypic").src = "https://d2.destinygamewiki.com/mediawiki/images/e/e5/Legend_of_acrius_icon1.png"
+	name = "Legend of Acrius";
+	impact = "85";
+	range = "100";
+	mag = 2;
+	rof = 45;
+	reload = 28;
+	update();
+	}
+	
+	function chooseTC() {
+	document.getElementById("mypic").src = "https://d2.destinygamewiki.com/mediawiki/images/1/19/Tractor_cannon_icon1.png"
+	name = "Tractor Cannon";
+	impact = "64";
+	range = "19";
+	mag = 4;
+	rof = 84;
+	reload = 24;
+	update();
+	}
+	
+	function chooseDV() {
+	document.getElementById("mypic").src = "https://d2.destinygamewiki.com/mediawiki/images/0/0a/The_wardcliff_coil_icon1.png"
+	name = "The Wardcliff Coil";
+	impact = "0";
+	range = "0";
+	mag = 1;
+	rof = 60;
+	reload = 55;
+	update();
+	}
+	
+	function chooseTTF() {
+	document.getElementById("mypic").src = "https://d2.destinygamewiki.com/mediawiki/images/7/7a/Two-tailed_fox_icon1.jpg"
+	name = "Two-Tailed Fox";
+	impact = "0";
+	range = "0";
+	mag = 2;
+	rof = 40;
+	reload = 26;
+	update();
+	}
+	
+	function chooseSS2() {
+	document.getElementById("mypic").src = "https://d2.destinygamewiki.com/mediawiki/images/0/00/Sleeper_Simulant_icon1.jpg"
+	name = "Sleeper Simulant";
+	impact = "41";
+	range = "63";
+	mag = 3;
+	rof = 0;
+	reload = 36;
+	update();
+	}
+	
+	function chooseTEL2() {
+	document.getElementById("mypic").src = "https://d2.destinygamewiki.com/mediawiki/images/7/7b/Telesto_icon2.jpg"
+	name = "Telesto";
+	impact = "85";
+	range = "32";
+	mag = 4;
+	rof = 0;
+	reload = 82;
+	update();
+	}
+	
+	function chooseMRCI() {
+	document.getElementById("mypic").src = "https://d2.destinygamewiki.com/mediawiki/images/0/05/Merciless_icon1.png"
+	name = "Merciless";
+	impact = "75";
+	range = "45";
+	mag = 8;
+	rof = 0;
+	reload = 49;
+	update();
+	}
+	
+	function chooseTHL2() {
+	document.getElementById("mypic").src = "https://d2.destinygamewiki.com/mediawiki/images/0/08/Thunderlord_icon1.jpg"
+	name = "Thunderlord";
+	impact = "41";
+	range = "64";
+	mag = 62;
+	rof = 450;
+	reload = 68;
+	update();
+	}
+	
+	function update() {
+		document.getElementById("name").innerText = name;
+		document.getElementById("impact").innerText = impact;
+		document.getElementById("range").innerText = range;
+		document.getElementById("mag").innerText = mag;
+		document.getElementById("rof").innerText = rof;
+		document.getElementById("reload").innerText= reload;
+	}
+	
+	document.getElementById("AOS2").addEventListener("click",chooseAOS2);
+	document.getElementById("CRSM").addEventListener("click",chooseCRSM);
+	document.getElementById("MLFS").addEventListener("click",chooseMLFS);
+	document.getElementById("STRM").addEventListener("click",chooseSTRM);
+	document.getElementById("SSHT").addEventListener("click",chooseSSHT);
+	document.getElementById("CRBS").addEventListener("click",chooseCRBS);
+	document.getElementById("SR2").addEventListener("click",chooseSR2);
+	document.getElementById("SWB").addEventListener("click",chooseSWB);
+	document.getElementById("HL2").addEventListener("click",chooseHL2);
+	document.getElementById("MM2").addEventListener("click",chooseMM2);
+	document.getElementById("JR2").addEventListener("click",chooseJR2);
+	document.getElementById("PL").addEventListener("click",choosePL);
+	document.getElementById("SKY").addEventListener("click",chooseSKY);
+	document.getElementById("RTK").addEventListener("click",chooseRTK);
+	document.getElementById("VW").addEventListener("click",chooseVW);
+	document.getElementById("GLA").addEventListener("click",chooseGLA);
+	document.getElementById("HCKL").addEventListener("click",chooseHCKL);
+	document.getElementById("RISK").addEventListener("click",chooseRISK);
+	document.getElementById("WISH").addEventListener("click",chooseWISH);
+	document.getElementById("TRI").addEventListener("click",chooseTRI);
+	document.getElementById("LEM").addEventListener("click",chooseLEM);
+	document.getElementById("CLD").addEventListener("click",chooseCLD);
+	document.getElementById("PLEN").addEventListener("click",choosePLEN);
+	document.getElementById("WAVE").addEventListener("click",chooseWAVE);
+	document.getElementById("LION").addEventListener("click",chooseLION);
+	document.getElementById("IZA").addEventListener("click",chooseIZA);
+	document.getElementById("BOR").addEventListener("click",chooseBOR);
+	document.getElementById("CHAP2").addEventListener("click",chooseCHAP2);
+	document.getElementById("LOW2").addEventListener("click",chooseLOW2);
+	document.getElementById("JOT").addEventListener("click",chooseJOT);
+	document.getElementById("WLZ").addEventListener("click",chooseWLZ);
+	document.getElementById("BT").addEventListener("click",chooseBT);
+	document.getElementById("ANA").addEventListener("click",chooseANA);
+	document.getElementById("PROS").addEventListener("click",choosePROS);
+	document.getElementById("COL").addEventListener("click",chooseCOL);
+	document.getElementById("DRC").addEventListener("click",chooseDRC);
+	document.getElementById("WOTW").addEventListener("click",chooseWOTW);
+	document.getElementById("ACR").addEventListener("click",chooseACR);
+	document.getElementById("TC").addEventListener("click",chooseTC);
+	document.getElementById("DV").addEventListener("click",chooseDV);
+	document.getElementById("TTF").addEventListener("click",chooseTTF);
+	document.getElementById("SS2").addEventListener("click",chooseSS2);
+	document.getElementById("TEL2").addEventListener("click",chooseTEL2);
+	document.getElementById("MRCI").addEventListener("click",chooseMRCI);
+	document.getElementById("THL2").addEventListener("click",chooseTHL2);
+</script>

@@ -1,0 +1,763 @@
+<head>
+<title>
+Destiny 1 Exotic Weapons
+</title>
+<style>
+	#content {
+		border:1px solid black;
+		background-color : #aaa;
+		}
+	
+	div.title {
+		text-align:center;
+		font-size: 1.5em;
+		text-decoration: underline
+		}
+		
+	div.data {
+		display: inline-block;
+		}
+	
+	button {
+		width : 200px;
+		}
+	
+	button.arc {
+		background-color: #78c0ed;
+		}
+	
+	button.sol {
+		background-color: #e28a31;
+		}
+	
+	button.void {
+		background-color: #9a57f2;
+		}
+		
+	button.kin {
+		background-color: #ccc9c9;
+		}	
+		
+	body {
+		background-color : #12171C;
+		color : #CEAE33;
+	}
+	
+	
+		
+</style>
+</head>
+<body>
+	<div class="title">Exotics</div>
+	<div>
+	<center>
+		<img src="https://vignette.wikia.nocookie.net/destinypedia/images/4/4c/Hawkmoon_%28Year_3%29_icon.jpg/revision/latest?cb=20180324003125" id="mypic">
+		<br>
+		Name: <div id="name" class="data">Hawkmoon</div><br>
+		Impact: <div id="impact" class="data">84</div><br>
+		Range: <div id="range" class="data">47</div><br>
+		Magazine: <div id="mag" class="data">13</div><br>
+		Rate of Fire: <div id="rof" class="data">22</div><br>
+		Reload: <div id="reload" class="data">46</div><br>
+	</center>
+	</div>
+	<br>
+	<div>
+		<button id="HWK" class="kin">Hawkmoon</button>
+		<button id="RD" class="kin">Red Death</button>
+		<button id="ZC" class="arc">Zhalo Supercell</button>
+		<button id="MM" class="kin">MIDA Multi-Tool</button>
+		<button id="TLW" class="kin">The Last Word</button>
+		<button id="TFC" class="kin">The First Curse</button>
+		<button id="TH" class="kin">Thorn</button>
+		<button id="AOS" class="kin">Ace of Spades</button>
+		<button id="NC" class="arc">Necrochasm</button>
+		<button id="SR" class="kin">Suros Regime</button>
+		<button id="KH" class="kin">Khvostov 7G-0X</button>
+		<button id="MC" class="kin">Monte Carlo</button>
+		<button id="FS" class="kin">Fabian Strategy</button>
+		<button id="HL" class="kin">Hard Light</button>
+		<button id="BJ" class="kin">Bad Juju</button>
+		<button id="OP" class="kin">Outbreak Prime</button>
+		<button id="NTTE" class="kin">No Time to Explain</button>	
+		<button id="BG" class="kin">Boolean Gemini</button>
+		<button id="JR" class="kin">The Jade Rabbit</button>
+		<button id="TOM" class="kin">Touch of Malice</button>
+		<button id="TL" class="kin">Tlaloc</button>
+		<button id="BS" class="sol">Black Spindle</button>
+		<button id="IB" class="sol">Icebreaker</button>
+		<button id="NLB" class="kin">No Land Beyond</button>
+		<button id="ZM" class="sol">Zen Meteor</button>
+		<button id="HERE" class="arc">Hereafter</button>
+		<button id="PAT" class="arc">Patience and Time</button>
+		<button id="CHAP" class="sol">The Chaperone</button>
+		<button id="INV" class="sol">Invective</button>
+		<button id="FRTH" class="arc">The 4th Horseman</button>
+		<button id="LOW" class="sol">Lord of Wolves</button>
+		<button id="UR" class="kin">Universal Remote</button>
+		<button id="PI" class="sol">Pocket Infinity</button>
+		<button id="SS" class="sol">Sleeper Simulant</button>
+		<button id="QBB" class="arc">Queenbreaker's Bow</button>
+		<button id="VEX" class="sol">Vex Mythoclast</button>
+		<button id="TEL" class="void">Telesto</button>
+		<button id="PC" class="arc">Plan C</button>
+		<button id="TP" class="arc">Trespasser</button>
+		<button id="DP" class="arc">Dreg's Promise</button>
+		<button id="DD" class="void">Dark Drinker</button>
+		<button id="RL" class="sol">Raze Lighter</button>
+		<button id="BC" class="arc">Bolt Caster</button>
+		<button id="YWH" class="sol">Young Wolf's Howl</button>
+		<button id="THL" class="arc">Thunderlord</button>
+		<button id="NM" class="void">Nova Mortis</button>
+		<button id="ABB" class="sol">Abbadon</button>
+		<button id="SGA" class="sol">Super Good Advice</button>
+		<button id="NS" class="sol">Nemesis Star</button>
+		<button id="GH" class="sol">Gjallahorn</button>
+		<button id="TR" class="void">Truth</button>
+		<button id="DB" class="sol">Dragon's Breath</button>
+		</div>
+	<br>
+</body>
+<script>
+	var name;
+	var impact;
+	var range;
+	var mag;
+	var rof;
+	var reload;
+	
+	function chooseHWK() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/4/4c/Hawkmoon_%28Year_3%29_icon.jpg/revision/latest?cb=20180324003125";
+		name = "Hawkmoon";
+		impact = "84";
+		range = "47";
+		mag = 13;
+		rof = 22;
+		reload = 46;
+		update();
+	}
+	
+	function chooseRD() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/d/d7/Red_Death_icon.jpg/revision/latest?cb=20161209090519";
+		name = "Red Death";
+		impact = "17";
+		range = "38";
+		mag = 30;
+		rof = 66;
+		reload = 76;
+		update();
+	}
+	
+	function chooseZC() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/5/55/Zhalo_Supercell_%28Year_3%29_icon.jpg/revision/latest?cb=20180324002809"
+		name = "Zhalo Supercell";
+		impact = "12";
+		range = "52";
+		mag = 36;
+		rof = 88;
+		reload = 72;
+		update();
+	}
+	
+	function chooseMM() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/5/56/MIDA_Multi-Tool_%28Year_3%29_icon.jpg/revision/latest?cb=20180324001301"
+		name = "MIDA Multi-Tool";
+		impact = "38";
+		range = "58";
+		mag = 21;
+		rof = 42;
+		reload = 100;
+		update();
+	}
+	
+	function chooseTLW() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/c/c7/ROI_The_Last_Word_icon.jpg/revision/latest?cb=20161224005746"
+		name = "The Last Word";
+		impact = "72";
+		range = "8";
+		mag = 8;
+		rof = 32;
+		reload = 56;
+		update();
+	}
+	
+	function chooseTFC() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/0/03/The_First_Curse_%28Year_3%29_icon.jpg/revision/latest?cb=20180324001546"
+		name = "The First Curse";
+		impact = "94";
+		range = "53";
+		mag = 8;
+		rof = 15;
+		reload = 29;
+		update();
+	}
+	
+	function chooseTH() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/f/f7/Thorn_%28Year_3%29_icon.jpg/revision/latest?cb=20160920103044"
+		name = "Thorn";
+		impact = "71";
+		range = "59";
+		mag = 9;
+		rof = 32;
+		reload = 43;
+		update();
+	}
+	
+	function chooseAOS() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/2/2f/Ace_of_Spades_icon.jpg/revision/latest?cb=20150908195502"
+		name = "Ace of Spades";
+		impact = "81";
+		range = "62";
+		mag = 12;
+		rof = 22;
+		reload = 43;
+		update();
+	}
+	
+	function chooseNC() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/1/1a/Necrochasm_icon.jpg/revision/latest?cb=20150912152046"
+		name = "Necrochasm";
+		impact = "5";
+		range = "22";
+		mag = 54;
+		rof = 100;
+		reload = 90;
+		update();
+	}
+	
+	function chooseSR() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/6/61/SUROS_Regime_%28Year_2%29_icon.jpg/revision/latest?cb=20170406043807"
+		name = "Suros Regime";
+		impact = "29";
+		range = "61";
+		mag = 33;
+		rof = 77;
+		reload = 65;
+		update();
+	}
+	
+	function chooseKH() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/a/a0/Khvostov_7G-0X_icon.jpg/revision/latest?cb=20170719074027"
+		name = "Khvostov 7G-0X";
+		impact = "22";
+		range = "43";
+		mag = 39;
+		rof = 80;
+		reload = 52;
+		update();
+	}
+	
+	function chooseMC() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/c/c2/Monte_Carlo_icon.jpg/revision/latest?cb=20170106090520"
+		name = "Monte Carlo";
+		impact = "12";
+		range = "64";
+		mag = 36;
+		rof = 88;
+		reload = 79;
+		update();
+	}
+	
+	function chooseFS() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/a/a7/Fabian_Strategy_icon.jpg/revision/latest?cb=20150908194153"
+		name = "Fabian Strategy";
+		impact = "10";
+		range = "55";
+		mag = 40;
+		rof = 88;
+		reload = 76;
+		update();
+	}
+	
+	function chooseHL() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/2/28/Hard_Light_%28Year_3%29_icon.jpg/revision/latest?cb=20180324002537"
+		name = "Hard Light";
+		impact = "12";
+		range = "31";
+		mag = 40;
+		rof = 88;
+		reload = 86;
+		update();
+	}
+	
+	function chooseBJ() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/e/e6/Bad_Juju_%28Year_3%29_icon.jpg/revision/latest?cb=20180324003319"
+		name = "Bad Juju";
+		impact = "9";
+		range = "57";
+		mag = 27;
+		rof = 73;
+		reload = 65;
+		update();
+	}
+	
+	function chooseOP() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/7/74/Outbreak_Prime_icon.jpg/revision/latest?cb=20160930052238"
+		name = "Outbreak Prime";
+		impact = "9";
+		range = "48";
+		mag = 33;
+		rof = 73;
+		reload = 76;
+		update();
+	}
+	
+	function chooseNTTE() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/8/8e/No_Time_to_Explain_icon.jpg/revision/latest?cb=20170719091218"
+		name = "No Time to Explain";
+		impact = "15";
+		range = "63";
+		mag = 21;
+		rof = 66;
+		reload = 72;
+		update();
+	}
+	
+	function chooseBG() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/f/f9/Boolean_Gemini_%28Year_3%29_icon.jpg/revision/latest?cb=20180324004040"
+		name = "Boolean Gemini"
+		impact = "51";
+		range = "79";
+		mag = 19;
+		rof = 37;
+		reload = 68;
+		update();
+	}
+	
+	function chooseJR() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/0/05/The_Jade_Rabbit_%28Year_3%29_icon.jpg/revision/latest?cb=20180324001143"
+		name = "The Jade Rabbit";
+		impact = "61";
+		range = "94";
+		mag = 11;
+		rof = 27;
+		reload = 72;
+		update();
+	}
+	
+	function chooseTOM() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/e/e0/Touch_of_Malice_icon.jpg/revision/latest?cb=20170406044410"
+		name = "Touch of Malice";
+		impact = "35";
+		range = "82";
+		mag = 11;
+		rof = 52;
+		reload = 65;
+		update();
+	}
+	
+	function chooseTL() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/e/e6/Tlaloc_icon.jpg/revision/latest?cb=20151228062350"
+		name = "Tlaloc";
+		impact = "49";
+		range = "71";
+		mag = 20;
+		rof = 37;
+		reload = 52;
+		update();
+	}
+	
+	function chooseBS() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/c/cf/Black_Spindle_icon.jpg/revision/latest?cb=20170628031039"
+		name = "Black Spindle";
+		impact = "38";
+		range = "92";
+		mag = 3;
+		rof = 12;
+		reload = 69;
+		update();
+	}
+	
+	function chooseIB() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/1/1e/Ice_Breaker_%28Year_3%29_icon.jpg/revision/latest?cb=20161214180412"
+		name = "Icebreaker";
+		impact = "32";
+		range = "100";
+		mag = 6;
+		rof = 19;
+		reload = 62;
+		update();
+	}
+	
+	function chooseNLB() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/0/0c/No_Land_Beyond_%28Year_3%29_icon.jpg/revision/latest?cb=20170405030919"
+		name = "No Land Beyond";
+		impact = "32";
+		range = "100";
+		mag = 6;
+		rof = 19;
+		reload = 76;
+		update();
+	}
+	
+	function chooseZM() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/9/95/Zen_Meteor_icon.jpg/revision/latest?cb=20170628010714"
+		name = "Zen Meteor";
+		impact = "37";
+		range = "90";
+		mag = 3;
+		rof = 19;
+		reload = 52;
+		update();
+	}
+	
+	function chooseHERE() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/1/14/Hereafter_%28Year_3%29_icon.jpg/revision/latest?cb=20180324004236"
+		name = "Hereafter";
+		impact = "28";
+		range = "85";
+		mag = 4;
+		rof = 26;
+		reload = 58;
+		update();
+	}
+	
+	function choosePAT() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/f/f4/Patience_and_Time_%28Year_3%29_icon.jpg/revision/latest?cb=20180323235653"
+		name = "Patience and Time";
+		impact = "25";
+		range = "78";
+		mag = 4;
+		rof = 26;
+		reload = 58;
+		update();
+	}
+	
+	function chooseCHAP() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/e/ee/The_Chaperone_icon.jpg/revision/latest?cb=20170505174540"
+		name = "The Chaperone";
+		impact = "42";
+		range = "28";
+		mag = 5;
+		rof = 35;
+		reload = 29;
+		update();
+	}
+	
+	function chooseINV() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/e/ee/Invective_%28Year_3%29_icon.jpg/revision/latest?cb=20180324000703"
+		name = "Invective";
+		impact = "48";
+		range = "32";
+		mag = 4;
+		rof = 30;
+		reload = 36;
+		update();
+	}
+	
+	function chooseFRTH() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/7/7c/The_4th_Horseman_%28Year_2%29_icon.jpg/revision/latest?cb=20170505174739"
+		name = "The 4th Horseman";
+		impact = "43";
+		range = "10";
+		mag = 5;
+		rof = 34;
+		reload = 22;
+		update();
+	}
+	
+	function chooseLOW() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/e/ee/Lord_of_Wolves_icon.jpg/revision/latest?cb=20150912151050"
+		name = "Lord of Wolves";
+		impact = "66";
+		range = "6";
+		mag = 6;
+		rof = 11;
+		reload = 29;
+		update();
+	}
+	
+	function chooseUR() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/d/dc/Universal_Remote_%28Year_3%29_icon.jpg/revision/latest?cb=20180324000815"
+		name = "Universal Remote";
+		impact = "40";
+		range = "23";
+		mag = 3;
+		rof = 17;
+		reload = 29;
+		update();
+	}
+	
+	function choosePI() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/5/5d/Pocket_Infinity_icon.jpg/revision/latest?cb=20150912160801"
+		name = "Pocket Infinity";
+		impact = "79";
+		range = "38";
+		mag = 4;
+		rof = 10;
+		reload = 86;
+		update();
+	}
+	
+	function chooseSS() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/2/2e/Sleeper_Simulant_icon.jpg/revision/latest?cb=20151228062319"
+		name = "Sleeper Simulant";
+		impact = "100";
+		range = "70";
+		mag = 3;
+		rof = 10;
+		reload = 72;
+		update();
+	}
+	
+	function chooseQBB() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/0/05/Queenbreakers%27_Bow_icon.jpg/revision/latest?cb=20150912161748"
+		name = "Queenbreaker's Bow";
+		impact = "84";
+		range = "70";
+		mag = 3;
+		rof = 31;
+		reload = 90;
+		update();
+	}
+	
+	function chooseVEX() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/6/6f/Vex_Mythoclast_%28Year_3%29_icon.jpg/revision/latest?cb=20170405024528"
+		name = "Vex Mythoclast";
+		impact = "38";
+		range = "70";
+		mag = 32;
+		rof = 40;
+		reload = 72;
+		update();
+	}
+	
+	function chooseTEL() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/a/a5/Telesto_%28Year_3%29_icon.jpg/revision/latest?cb=20180324000254"
+		name = "Telesto";
+		impact = "71";
+		range = "40";
+		mag = 5;
+		rof = 37;
+		reload = 93;
+		update();
+	}
+	
+	function choosePC() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/a/a5/Telesto_%28Year_3%29_icon.jpg/revision/latest?cb=20180324000254"
+		name = "Plan C";
+		impact = "71";
+		range = "40";
+		mag = 5;
+		rof = 37;
+		reload = 93;
+		update();
+	}
+	
+	function chooseTP() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/0/0b/Trespasser_icon.jpg/revision/latest?cb=20160920103337"
+		name = "Trespasser";
+		impact = "15";
+		range = "42";
+		mag = 18;
+		rof = 90;
+		reload = 99;
+		update();
+	}
+	
+	function chooseDP() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/1/1c/Dreg%27s_Promise_icon.jpg/revision/latest?cb=20150912142127"
+		name = "Dreg's Promise";
+		impact = "12";
+		range = "30";
+		mag = 21;
+		rof = 100;
+		reload = 86;
+		update();
+	}
+	
+	function chooseDD() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/3/3c/Dark-Drinker_icon.jpg/revision/latest?cb=20150909153122"
+		name = "Dark Drinker";
+		impact = "60";
+		range = "25";
+		mag = 71;
+		rof = 0;
+		reload = 0;
+		update();
+	}
+	
+	function chooseRL() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/8/80/Raze-Lighter_icon.jpg/revision/latest?cb=20151228062311"
+		name = "Raze Lighter";
+		impact = "60";
+		range = "25";
+		mag = 71;
+		rof = 0;
+		reload = 0;
+		update();
+	}
+	
+	function chooseBC() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/a/a9/Bolt-Caster_icon.jpg/revision/latest?cb=20150909114540"
+		name = "Bolt Caster";
+		impact = "60";
+		range = "25";
+		mag = 71;
+		rof = 0;
+		reload = 0;
+		update();
+	}
+	
+	function chooseYWH() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/c/c3/The_Young_Wolf%27s_Howl_icon.jpg/revision/latest?cb=20160920225524"
+		name = "Young Wolf's Howl";
+		impact = "55";
+		range = "25";
+		mag = 66;
+		rof = 0;
+		reload = 0;
+		update();
+	}
+	
+	function chooseTHL() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/c/c2/Thunderlord_%28Year_2%29_icon.jpg/revision/latest?cb=20150912170825"
+		name = "Thunderlord";
+		impact = "55";
+		range = "34";
+		mag = 49;
+		rof = 66;
+		reload = 60;
+		update();
+	}
+	
+	function chooseNM() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/e/e1/Nova_Mortis_icon.jpg/revision/latest?cb=20161214175341"
+		name = "Nova Mortis";
+		impact = "55";
+		range = "34";
+		mag = 49;
+		rof = 66;
+		reload = 60;
+		update();
+	}
+	
+	function chooseABB() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/d/d4/Abbadon_icon.jpg/revision/latest?cb=20161214175326"
+		name = "Abbadon";
+		impact = "55";
+		range = "34";
+		mag = 49;
+		rof = 66;
+		reload = 60;
+		update();
+	}
+	
+	function chooseSGA() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/4/47/Super_Good_Advice_%28Year_2%29_icon.jpg/revision/latest?cb=20170428013227"
+		name = "Super Good Advice";
+		impact = "29";
+		range = "24";
+		mag = 35;
+		rof = 88;
+		reload = 36;
+		update();
+	}
+	
+	function chooseNS() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/f/f7/Nemesis_Star_icon.jpg/revision/latest?cb=20170628035929"
+		name = "Nemesis Star";
+		impact = "55";
+		range = "14";
+		mag = 53;
+		rof = 66;
+		reload = 23;
+		update();
+	}
+	
+	function chooseGH() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/b/b2/Gjallarhorn_%28Year_3%29_icon.jpg/revision/latest?cb=20160920102120"
+		name = "Gjallahorn";
+		impact = "0";
+		range = "0";
+		mag = 2;
+		rof = 11;
+		reload = 76;
+		update();
+	}
+	
+	function chooseTR() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/0/0c/ROI_Truth_icon.jpg/revision/latest?cb=20170105011411"
+		name = "Truth";
+		impact = "0";
+		range = "0";
+		mag = 1;
+		rof = 11;
+		reload = 93;
+		update();
+	}
+	
+	function chooseDB() {
+		document.getElementById("mypic").src = "https://vignette.wikia.nocookie.net/destinypedia/images/6/69/Dragon%27s_Breath_%28Year_2%29_icon.jpg/revision/latest?cb=20170406044931"
+		name = "Dragon's Breath";
+		impact = "0";
+		range = "0";
+		mag = 1;
+		rof = 18;
+		reload = 59;
+		update();
+	}
+	
+function update() {
+		document.getElementById("name").innerText = name;
+		document.getElementById("impact").innerText = impact;
+		document.getElementById("range").innerText = range;
+		document.getElementById("mag").innerText = mag;
+		document.getElementById("rof").innerText = rof;
+		document.getElementById("reload").innerText= reload;
+	}
+
+
+	document.getElementById("HWK").addEventListener("click",chooseHWK);
+	document.getElementById("RD").addEventListener("click",chooseRD);
+	document.getElementById("ZC").addEventListener("click",chooseZC);
+	document.getElementById("MM").addEventListener("click",chooseMM);
+	document.getElementById("TLW").addEventListener("click",chooseTLW);
+	document.getElementById("TFC").addEventListener("click",chooseTFC);
+	document.getElementById("TH").addEventListener("click",chooseTH);
+	document.getElementById("AOS").addEventListener("click",chooseAOS);
+	document.getElementById("NC").addEventListener("click",chooseNC);
+	document.getElementById("SR").addEventListener("click",chooseSR);
+	document.getElementById("KH").addEventListener("click",chooseKH);
+	document.getElementById("MC").addEventListener("click",chooseMC);
+	document.getElementById("FS").addEventListener("click",chooseFS);
+	document.getElementById("HL").addEventListener("click",chooseHL);
+	document.getElementById("BJ").addEventListener("click",chooseBJ);
+	document.getElementById("OP").addEventListener("click",chooseOP);
+	document.getElementById("NTTE").addEventListener("click",chooseNTTE);
+	document.getElementById("BG").addEventListener("click",chooseBG);
+	document.getElementById("JR").addEventListener("click",chooseJR);
+	document.getElementById("TOM").addEventListener("click",chooseTOM);
+	document.getElementById("TL").addEventListener("click",chooseTL);
+	document.getElementById("BS").addEventListener("click",chooseBS);
+	document.getElementById("IB").addEventListener("click",chooseIB);
+	document.getElementById("NLB").addEventListener("click",chooseNLB);
+	document.getElementById("ZM").addEventListener("click",chooseZM);
+	document.getElementById("HERE").addEventListener("click",chooseHERE);
+	document.getElementById("PAT").addEventListener("click",choosePAT);
+	document.getElementById("CHAP").addEventListener("click",chooseCHAP);
+	document.getElementById("INV").addEventListener("click",chooseINV);
+	document.getElementById("FRTH").addEventListener("click",chooseFRTH);
+	document.getElementById("LOW").addEventListener("click",chooseLOW);
+	document.getElementById("UR").addEventListener("click",chooseUR);
+	document.getElementById("PI").addEventListener("click",choosePI);
+	document.getElementById("SS").addEventListener("click",chooseSS);
+	document.getElementById("QBB").addEventListener("click",chooseQBB);
+	document.getElementById("VEX").addEventListener("click",chooseVEX);
+	document.getElementById("TEL").addEventListener("click",chooseTEL);
+	document.getElementById("PC").addEventListener("click",choosePC);
+	document.getElementById("TP").addEventListener("click",chooseTP);
+	document.getElementById("DP").addEventListener("click",chooseDP);
+	document.getElementById("DD").addEventListener("click",chooseDD);
+	document.getElementById("RL").addEventListener("click",chooseRL);
+	document.getElementById("BC").addEventListener("click",chooseBC);
+	document.getElementById("YWH").addEventListener("click",chooseYWH);
+	document.getElementById("THL").addEventListener("click",chooseTHL);
+	document.getElementById("NM").addEventListener("click",chooseNM);
+	document.getElementById("ABB").addEventListener("click",chooseABB);
+	document.getElementById("SGA").addEventListener("click",chooseSGA);
+	document.getElementById("NS").addEventListener("click",chooseNS);
+	document.getElementById("GH").addEventListener("click",chooseGH);
+	document.getElementById("TR").addEventListener("click",chooseTR);
+	document.getElementById("DB").addEventListener("click",chooseDB);
+</script>
